@@ -1,0 +1,16 @@
+<nav>
+    
+    <a href="/">Homepage</a>
+    <a href="/entries">All Entries</a>
+    <a href="/entries/new">Create Entry</a>
+    <a href="/entries/my-entries">My Entries</a>
+    <% if (user){ %>
+    <a href="/auth/sign-out">Logout</a>
+
+    <% } else{ %>
+    <a href="/auth/sign-up">Sign up</a>
+    <a href="/auth/sign-in">Login</a>
+
+    <% } %>
+    
+</nav>
